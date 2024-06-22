@@ -11,7 +11,7 @@
 
         @vite(['resources/js/app.js'])
     </head>
-    <body>
+    <body class="antialiased">
         <div id="app"></div>    
     </body>
 </html>

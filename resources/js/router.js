@@ -1,17 +1,15 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory } from 'vue-router';
+import Dashboard from './Pages/Dashboard.vue';
+import Chat from './Pages/Chat.vue';
 
 const routes = [
-    {
-        path: "/",
-        component: () => import("./Pages/Home.vue"),
-    },
-    {
-        path: "/test",
-        component: () => import("./Pages/Test.vue"),
-    },
+  { path: '/', name: 'dashboard', component: Dashboard },
+  { path: '/chat', name: 'chat', component: Chat }
 ];
 
-export default createRouter({
-    history: createWebHistory(),
-    routes,
+const router = createRouter({
+  history: createWebHistory(),
+  routes
 });
+
+export default router;
